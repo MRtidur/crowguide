@@ -2,6 +2,7 @@
 
 import { Button } from "./ui/button"
 import { Link } from "react-router-dom"
+import { getAssetPath } from "../lib/utils";
 
 export function Navbar() {
   return (

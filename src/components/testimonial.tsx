@@ -1,5 +1,6 @@
 
 import React, { StrictMode } from "react"
+import { getAssetPath } from "../lib/utils";
 export function Testimonials(){
 
     return(
@@ -31,7 +32,7 @@ export function Testimonials(){
         with CrowGuide’s AI-powered learning
       </p>
       <div className="flex items-center mt-6">
-        <img src="/avatar1.jpg" alt="avatar" className="w-10 h-10 rounded-full mr-4"/>
+        <img src={getAssetPath("/avatar1.jpg")} alt="avatar" className="w-10 h-10 rounded-full mr-4"/>
         <div>
           <h4 className="font-semibold text-gray-900">Zulfikar Hadi</h4>
           <p className="text-sm text-gray-600">AI Engineer</p>
@@ -47,7 +48,7 @@ export function Testimonials(){
         with CrowGuide’s AI-powered learning
       </p>
       <div className="flex items-center mt-6">
-        <img src="/avatar2.jpg" alt="avatar" className="w-10 h-10 rounded-full mr-4"/>
+        <img src={getAssetPath("/avatar1.jpg")} alt="avatar" className="w-10 h-10 rounded-full mr-4"/>
         <div>
           <h4 className="font-semibold text-gray-900">Luna</h4>
           <p className="text-sm text-gray-600">ML Engineer</p>
@@ -63,7 +64,7 @@ export function Testimonials(){
         with CrowGuide’s AI-powered learning
       </p>
       <div className="flex items-center mt-6">
-        <img src="/avatar3.jpg" alt="avatar" className="w-10 h-10 rounded-full mr-4"/>
+        <img src={getAssetPath("/avatar1.jpg")}alt="avatar" className="w-10 h-10 rounded-full mr-4"/>
         <div>
           <h4 className="font-semibold text-gray-900">Osama</h4>
           <p className="text-sm text-gray-600">Pilot</p>
@@ -79,7 +80,7 @@ export function Testimonials(){
         with CrowGuide’s AI-powered learning
       </p>
       <div className="flex items-center mt-6">
-        <img src="/avatar4.jpg" alt="avatar" className="w-10 h-10 rounded-full mr-4"/>
+        <img src={getAssetPath("/avatar1.jpg")} alt="avatar" className="w-10 h-10 rounded-full mr-4"/>
         <div>
           <h4 className="font-semibold text-gray-900">Tasya</h4>
           <p className="text-sm text-gray-600">Arms Dealer</p>

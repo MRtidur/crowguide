@@ -1,5 +1,5 @@
 "use client"
-
+import { getAssetPath } from "../lib/utils";
 import { useState, useEffect } from "react"
 import { Button } from "./ui/button"
 import { ArrowRight, Play, BookOpen, Target, Zap } from "lucide-react"
@@ -59,7 +59,7 @@ export function HeroSection() {
 
             {/* Ilustrations for later */}
             <div className="relative items-center flex items-center justify-center">
-                <img src="/hero-section-ils.webp" alt="" width={500} height={500}/>
+                <img src={getAssetPath("/hero-section-ils.webp")} alt="" width={500} height={500}/>
             </div>
 
 

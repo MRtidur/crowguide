@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub, FaGoogle } from "react-icons/fa";
-
+import { getAssetPath } from "../lib/utils";
 export function LoginPage() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-[#DDDDDD] via-white to-[#977AC2]">

@@ -6,6 +6,7 @@ import { Button } from "./ui/button"
 import { Input } from "./ui/input"
 import { Link } from "react-router-dom"
 import { Github, Mail } from "lucide-react"
+import { getAssetPath } from "../lib/utils";
 
 export function Signup() {
   const [formData, setFormData] = useState({

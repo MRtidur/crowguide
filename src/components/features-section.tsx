@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 import { Button } from "./ui/button"
-
+import { getAssetPath } from "../lib/utils";
 
 const tabs = [
   { id: "easyfun", label: "Easy & Fun" },
@@ -13,31 +13,31 @@ const features = [
   {
     id: "feature1",
     label: "Feature 1",
-    img: "/feature1.webp",
+    img: getAssetPath("/device.webp"),
     desc: "Ini deskripsi untuk Feature 1. Lorem ipsum dolor sit amet consectetur adipiscing elit."
   },
   {
     id: "feature2",
     label: "Feature 2",
-    img: "/feature1.webp",
+    img: getAssetPath("/device.webp"),
     desc: "Deskripsi singkat tentang Feature 2. Praesent vestibulum porttitor porttitor."
   },
   {
     id: "feature3",
     label: "Feature 3",
-    img: "/feature1.webp",
+    img: getAssetPath("/device.webp"),
     desc: "Deskripsi tentang Feature 3. Vivamus faucibus rhoncus purus."
   },
   {
     id: "feature4",
     label: "Feature 4",
-    img: "/feature1.webp",
+    img: getAssetPath("/device.webp"),
     desc: "Feature 4 memberikan pengalaman lebih baik dengan UI yang rapi."
   },
   {
     id: "feature5",
     label: "Feature 5",
-    img: "/feature1.webp",
+    img: getAssetPath("/device.webp"),
     desc: "Feature 5 adalah fitur tambahan untuk mempermudah pekerjaan Anda."
   },
 ]
@@ -87,7 +87,7 @@ export function Features() {
               </p>
         </div>
         <div className="relative z-10 flex flex-col lg:w-210  mt-10 mb-30 mx-10">
-          <img src="/device.webp" alt="device" />
+          <img src={getAssetPath("/device.webp")} alt="device" />
         </div>  
                     
     </section>
@@ -116,7 +116,7 @@ export function Features() {
           </p>
           <div className="bg-white rounded-lg h-48 flex items-center justify-center">
             {/* Image goes here */}
-            <img src="/device.webp" alt="Dashboard" className="rounded-lg object-cover h-full w-full" />
+            <img src={getAssetPath("/device.webp")} alt="Dashboard" className="rounded-lg object-cover h-full w-full" />
           </div>
         </div>
 
@@ -127,7 +127,7 @@ export function Features() {
             Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
           </p>
           <div className="bg-white rounded-lg h-48 flex items-center justify-center">
-            <img src="/placeholder.webp" alt="Tool2" className="rounded-lg object-cover h-full w-full" />
+            <img src={getAssetPath("/placeholder.webp")} alt="Tool2" className="rounded-lg object-cover h-full w-full" />
           </div>
         </div>
 
@@ -138,7 +138,7 @@ export function Features() {
             Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
           </p>
           <div className="bg-white rounded-lg h-48 flex items-center justify-center">
-            <img src="/placeholder.webp" alt="Tool3" className="rounded-lg object-cover h-full w-full" />
+            <img src={getAssetPath("/placeholder.webp")}alt="Tool3" className="rounded-lg object-cover h-full w-full" />
           </div>
         </div>
 
@@ -149,7 +149,7 @@ export function Features() {
             Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
           </p>
           <div className="bg-white rounded-lg h-48 flex items-center justify-center">
-            <img src="/placeholder.webp" alt="Tool4" className="rounded-lg object-cover h-full w-full" />
+            <img src={getAssetPath("/placeholder.webp")} alt="Tool4" className="rounded-lg object-cover h-full w-full" />
           </div>
         </div>
 

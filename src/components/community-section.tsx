@@ -1,5 +1,5 @@
 
-
+import { getAssetPath } from "../lib/utils";
 export function CommunitySection() {
   return (
 
