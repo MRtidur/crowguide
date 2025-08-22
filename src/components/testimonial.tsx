@@ -1,5 +1,5 @@
 
-
+import React, { StrictMode } from "react"
 export function Testimonials(){
 
     return(

@@ -2,6 +2,7 @@
 import { useState } from "react"
 import { Button } from "./ui/button"
 
+
 const tabs = [
   { id: "easyfun", label: "Easy & Fun" },
   { id: "directed", label: "Directed Learning" },

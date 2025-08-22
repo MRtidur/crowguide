@@ -5,6 +5,7 @@ import { Button } from "./ui/button"
 import { ArrowRight, Play, BookOpen, Target, Zap } from "lucide-react"
 import { Link } from "react-router-dom"
 
+
 export function HeroSection() {
   const [currentWord, setCurrentWord] = useState(0)
   const words = ["Smarter", "Faster", "Better", "Easier"]

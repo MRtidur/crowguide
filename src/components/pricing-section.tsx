@@ -64,7 +64,7 @@ export function PricingSection() {
           <div
             key={plan.name}
             className={`relative bg-gray-100 text-gray-900 rounded-2xl shadow-md p-6 flex flex-col justify-between ${
-              plan.popular ? "border-2 border-[#2F4BCB]" : ""
+              plan.popular ? "border-2 border-blue-500" : ""
             }`}
           >
             {plan.popular && (
