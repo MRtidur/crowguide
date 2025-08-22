@@ -13,6 +13,7 @@ import { LoginPage } from "./components/loginPage"
 import { Signup } from "./components/signupPage"
 import "./index.css"
 
+const basename = process.env.NODE_ENV === 'production' ? '/crowguide' : '';
 function HomePage() {
   return (
     <>
@@ -47,12 +48,11 @@ function HomePage() {
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<Signup/>} />
-
       </Routes>
     </BrowserRouter>
   </StrictMode>
