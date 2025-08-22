@@ -54,7 +54,7 @@ export function Features() {
   }
 
   return (
-     <div className="flex flex-col inset-0 w-screen">
+     <div className="features-section flex flex-col inset-0 w-screen">
     <section className="relative w-full bg-[#0D1014] place-items-center items-center">
             {/* Content */}
       <div className="mx-10 relative z-10 flex flex-col items-center gap-12 pt-20 ">
